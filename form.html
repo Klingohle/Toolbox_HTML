@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div {
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="$_SERVER['PHP_SELF']" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="password">Passwort</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="name">Email</label>
+            <input type="email" name="email" id="email" >
+        </div>
+        <div>
+            <label for="name">Age</label>
+            <input type="age" name="age" id="age" min="18" max="240" required>
+        </div>
+        <div>
+            <label for="date">Birthday</label>
+            <input type="date" name="date" id="date" min="2003-10-10">
+        </div><h3>The 'checkbox' type</h3>
+        <div>
+            <label for="green" style="color: green">Green</label>
+            <input type="checkbox" name="green" id="green">
+        </div>
+        <div>
+            <label for="blue" style="color: blue">Blue</label>
+            <input type="checkbox" name="blue" id="blue" >
+        </div>
+        <div>
+            <label for="green" style="color: red">Red</label>
+            <input type="checkbox" name="red" id="red" >
+        </div>
+        <div>
+            <label for="green" style="color: orange">Orange</label>
+            <input type="checkbox" name="orange" id="orange" >
+        </div>
+        <h3>The 'radio' type</h3>
+        <!-- MIND: For Radiobuttons, the type must be the same 
+                    and you do need to specify a value -->
+        <div>
+            <label for="5">5</label>
+            <input type="radio" name="favnumber" id="5" value="5">
+        </div>
+        <div>
+            <label for="7">7</label>
+            <input type="radio" name="favnumber" id="7" value="7">
+        </div>
+        <div>
+            <label for="24">24</label>
+            <input type="radio" name="favnumber" id="24" value="24">
+        </div>
+        <h3>Choosing yummy food by using Select</h3>
+        <div>
+            <select name="yummy">
+                <option label="pizza" value="pizza"></option>
+                <option label="pasta" value="pasta"></option>
+                <option label="rice" value="rice"></option>
+                <option label="potatoes" value="potatoes"></option>
+            </select>
+        </div>
+        <h3>The 'url' type</h3>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <h3>If you need to provide a field for entering larger contents: go with textarea</h3>
+        <div>
+            <label for="story">Tell us your story</label>
+            <textarea name="story" id="story"></textarea>
+        </div>
+        <h3>And now for something completely different: hidden</h3>
+        <div>
+            <input type="hidden" name="hidden" value="secret">
+        </div>
+        <h3>The 'file' type</h3>
+        <!-- You can provide data to a server
+             MIND: you will need to set the enctype  in the form-element above -->
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <h3>The 'phone' type is 'tel'</h3>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="color">Colorselector</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="submit">Submit</label>
+            <input type="submit" name="submit" id="submit" >
+        </div>
+    </form>
+</body>
+</html>

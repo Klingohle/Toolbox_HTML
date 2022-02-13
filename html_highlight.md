@@ -100,11 +100,12 @@ OR
 <tt>
 <var>
 ```
-## <span style="color:grey"></span>
+## <span style="color:grey">Forms</span>
+### HTMl provides tons of great functionality for forms, see form.html for examples
 ## <span style="color:grey"></span>
 
 ## 2 NICE TOUCH
-## <span style="color:grey">fieldseet & legend</span>
+## <span style="color:grey">fieldset & legend</span>
 ```HTML
     <fieldset>
         <legend>Welcome to our Side</legend>
